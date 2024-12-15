@@ -1,0 +1,189 @@
+{
+  "main": {
+    "id": "536f01708c6ea3c7",
+    "type": "split",
+    "children": [
+      {
+        "id": "44130a60b67497ea",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "680e91f3866caa87",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dc5fe13e20dc1eba",
+    "type": "split",
+    "children": [
+      {
+        "id": "9f4301f0457aa557",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2a53d03d59579a6b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "86cbf55e939f1ba3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "ba4887790f196043",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "7e70fad8fa8fa827",
+    "type": "split",
+    "children": [
+      {
+        "id": "8c578d2bf94e1cf9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "aef008419149ad43",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "a413ea070ee979c8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "9bb6f22a0016e005",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "9a51de2cc61825ab",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "680e91f3866caa87",
+  "lastOpenFiles": [
+    "Papers/Nested Named Entity Recognition as Latent Lexicalized Constituency Parsing.md",
+    "NER Methods/Span Based.md",
+    "NER Methods/Sequence-to-sequence.md",
+    "NER Methods/Sequence Labeling.md",
+    "NER Methods/Layer-based.md",
+    "NER Methods/Hypergraph-based.md",
+    "Papers/Unified Named Entity Recognition as Word-Word Relation Classification.md",
+    "Papers/A Span-Based Model for Joint Overlapped and Discontiunuous Named Entity Recognition.md",
+    "NER Methods/Object detection.md",
+    "NER Methods/Parsing-based.md",
+    "Papers/Rethinking Boundaries End-To-End Recognition of Discontinuous Mentions with Pionter Networks.md",
+    "Papers/Neural Architectures for Named Entity Recognition.md",
+    "Papers/Locate and Label - A Two-stage Indentifier for Nested Named Entity Recognition.md",
+    "Papers/Discontinuous Named Entity Recognition as Maximal Clique Discovery.md",
+    "Papers/A Supervised Multi-Head Self-Attention Network for Nested Named Entity Recognition.md",
+    "Data Sets/NNE.md",
+    "Data Sets/Untitled.md",
+    "Data Sets/KBP 2017.md",
+    "Data Sets/JNLPBA.md",
+    "Data Sets/CoNLL-2002.md",
+    "Data Sets/CoNLL-2003.md",
+    "Data Sets/GENIA.md",
+    "Data Sets/ACE 2005.md",
+    "Data Sets/ACE 2004.md",
+    "Data Sets/CADEC.md",
+    "Data Sets/ShARe 13.md",
+    "Papers",
+    "NER Methods",
+    "Data Sets"
+  ]
+}

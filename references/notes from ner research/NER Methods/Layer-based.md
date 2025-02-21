@@ -2,7 +2,7 @@
 Dynamically merge subspans to larger spans. Linear-chain CRFs. Recognize entities layer by layer in bottom-up or top-down.
 
 ## Problems
-Error propagation issue due to the cascade decoding.
+Error propagation issue due to the cascade decoding. [[Nested Named Entity Recognition as Latent Lexicalized Constituency Parsing]]
 
 ## Examples
 - [A Neural Layered Model for Nested Named Entity Recognition](https://aclanthology.org/N18-1131.pdf)

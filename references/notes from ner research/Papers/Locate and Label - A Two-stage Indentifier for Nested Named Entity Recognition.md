@@ -40,6 +40,9 @@ Response for span-based methods problems:
 ## model
 [locate-and-label](https://github.com/tricktreat/locate-and-label)
 
+## evaluation
+- a predicted entity is confirmed correct when the entity boundary and the entity label are correct simultaneously
+- precision, recall,  F1 score
 ### references
 - [FLAT: Chinese NER Using Flat-Lattice Transformer](https://aclanthology.org/2020.acl-main.611/) "In recent years, several approaches have been proposed to solve the nested named entity recognition task, mainly including tagging-based (...) Pyramid designs a pyramid structured tagging framework that uses CNN networks to identify entities from the bottom up."
 - [Named Entity Recognition as Dependency Parsing](https://aclanthology.org/2020.acl-main.577/) "... reformulated NER as a structured prediction task ans adopted a biaffine model for nested and flat NER."

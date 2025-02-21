@@ -32,6 +32,9 @@ Maximal clique discovery based discontinuous model.
 ## model
 [Information Extraction](https://github.com/131250208/infextraction)
 
+## evaluation
+- precision, recall,  F1 score
+
 ### references
 - [Evaluating the state of the art in disorder recognition and normalization of the clinical narrative](https://pubmed.ncbi.nlm.nih.gov/25147248/) "... While such assumption is valid for most cases, it does not always hold, especially in clinical corpus."
 - [TPLinker: Single-stage Joint Extraction of Entities and Relations Through Token Pair Linking](https://aclanthology.org/2020.coling-main.138/) "Our model is motivated by TPLinker, which formulates joint extraction as a token pair linking problem by aligning the boundary tokens of entity pairs."

@@ -27,7 +27,8 @@ Model with 3 major merits:
 - [[ShARe 13]]
 ## model
 [DisNER-PtrNet](https://github.com/scofield7419/DisNER-PtrNet)
-
+## evaluation
+- precision, recall, micro-F1 scores
 ### references
 - [[Neural Architectures for Named Entity Recognition]]
 - [Combining Spans into Entities: A Neural Two-Stage Approach for Recognizing Discontiguous Entities](https://aclanthology.org/D19-1644/) "Other approaches aim to build more effective inference systems by modeling the structure as a whole graph, e.g. (...) the two-stage method..."

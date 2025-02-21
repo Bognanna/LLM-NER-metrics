@@ -7,3 +7,5 @@ description: CSIRO Adverse Drug Event Corpus (Cadec) is a rich annotated corpus 
 avaiability: https://link.springer.com/chapter/10.1007/978-3-642-40802-1_24 https://clefehealth.imag.fr/clefehealth.imag.fr/index3fd7.html?page_id=441
 tasks: discontinuous NER, biomedical domain
 ---
+## Notes
+- need to send signed form

@@ -13,20 +13,6 @@
         "a": 1,
         "rgb": 11776947
       }
-    },
-    {
-      "query": "path:Papers  ",
-      "color": {
-        "a": 1,
-        "rgb": 16722228
-      }
-    },
-    {
-      "query": "path:\"NER Methods\"  ",
-      "color": {
-        "a": 1,
-        "rgb": 6066646
-      }
     }
   ],
   "collapse-display": false,

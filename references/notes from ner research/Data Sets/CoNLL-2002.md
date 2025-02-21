@@ -7,3 +7,5 @@ description: "The shared task of CoNLL-2002 concerns language-independent named 
 avaiability: https://paperswithcode.com/dataset/conll-2002
 tasks: flat NER
 ---
+## Notes
+- access ???

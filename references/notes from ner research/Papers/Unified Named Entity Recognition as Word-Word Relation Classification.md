@@ -44,6 +44,16 @@ Discontinuous NER Datasets:
 ## model
 [W2NER](https://github.com/ljynlp/W2NER)
 
+## evaluation
+- precision, recall,  F1 score
+
+## critique
+1) Challanges in adapting to unfamiliar entity types without extensive retraining:
+	- performs in-domain supervised learning on specific datasets 
+	- limited to a set of fixed predefined entity categories
+	[[Span-based Unified Named Entity Recognition Framework via Contrastive Learning]]
+
+
 ### references
 - [[Neural Architectures for Named Entity Recognition]]
 - [[Rethinking Boundaries End-To-End Recognition of Discontinuous Mentions with Pionter Networks]]

@@ -49,6 +49,10 @@ Multi-task learning model using supervised, multi-head, self-attention neural me
 ## model
 - [Source Code](https://github.com/xyxAda/Attention_NER)
 
+## evaluation
+- a predicted entity is considered correct only when its span and type match with the gold entity
+- precision, recall, micro F1 scores
+
 ### references
 - [[Neural Architectures for Named Entity Recognition]]
 - [Nested Named Entity Recognition](https://aclanthology.org/D09-1015) "One representative category is based on the sequence labeling that convert the nested structures into flat structures by various transform operations, such as construct a syntactic constituency tree ..."

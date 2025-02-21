@@ -7,3 +7,5 @@ description: Focus on the indentification of disorder mentions in clinical notes
 avaiability: https://link.springer.com/chapter/10.1007/978-3-319-11382-1_17
 tasks: discontinuous NER, biomedical domain
 ---
+## Notes
+- need to send signed form

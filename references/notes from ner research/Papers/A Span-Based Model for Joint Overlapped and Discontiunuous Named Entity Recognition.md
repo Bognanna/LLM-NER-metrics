@@ -29,7 +29,17 @@ Previously solutions for either overlapped or  discontinuous entities. Challenge
 ## model
 [A Span-Based Model for Joint Overlapped and Discontinuous Named Entity Recognition](https://github.com/foxlf823/sodner)
 
-### references
+## evaluation
+- a predicted entity is considered correct only when its span and type match with the gold entity
+- for a discontinuous entity: each span should match a span of the gold entity
+- precision, recall, F1 scores
+
+# critique
+- problems with maximal span lengths [[Unified Named Entity Recognition as Word-Word Relation Classification]]
+- considerable model complexity due to the enumerating nature [[Unified Named Entity Recognition as Word-Word Relation Classification]]
+- suffer from heavy reliance on task-specific tagging strategies [[TriG-NER - Triplet-Grid Framework for Discontinuous Named Entuty Recognition]]:
+	- highly specialized (limited adaptability to new datasets and unseen entity types)
+# references
 - [[Neural Architectures for Named Entity Recognition]]
 - [Learning to Recognize Discontiguous Entities](https://arxiv.org/abs/1810.08579) "The hypergraph (...) models are flexible to be adapted for different tasks, achievieng great successes for overlaped or discontinuous NER."
 - [Neural Segmental Hypergraphs for Overlapping Mention Recognition](https://arxiv.org/abs/1810.01817) "The hypergraph (...) models are flexible to be adapted for different tasks, achievieng great successes for overlaped or discontinuous NER."

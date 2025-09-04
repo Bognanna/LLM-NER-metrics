@@ -34,9 +34,51 @@
               "icon": "lucide-file",
               "title": "Scripts from meetings"
             }
+          },
+          {
+            "id": "ca85b47046cd04a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Metric proposals.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Metric proposals"
+            }
+          },
+          {
+            "id": "8f2cea0c3ecd583d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Scripts from meetings.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Scripts from meetings"
+            }
+          },
+          {
+            "id": "3aac3ebdb62ff9fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Sets/CADEC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CADEC"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -167,6 +209,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -175,10 +218,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b4360c4102b42832",
+  "active": "8f2cea0c3ecd583d",
   "lastOpenFiles": [
-    "Data Sets/CoNLL-2003.md",
+    "Notes/Metric proposals.md",
     "Notes/Scripts from meetings.md",
+    "Data Sets/CADEC.md",
+    "Data Sets/CoNLL-2003.md",
     "Notes",
     "Papers/Unified Named Entity Recognition as Word-Word Relation Classification.md",
     "Data Sets/BioNLP.md",
@@ -196,14 +241,12 @@
     "Data Sets/ACE 2005.md",
     "Data Sets/ACE 2004.md",
     "Bibliography.md",
-    "Data Sets/CADEC.md",
     "Data Sets/JNLPBA.md",
     "Data Sets/CoNLL-2002.md",
     "Data Sets/ShARe 13.md",
     "Data Sets/ShARe 14.md",
     "Data Sets/NNE.md",
     "Data Sets/KBP 2017.md",
-    "Papers/A Supervised Multi-Head Self-Attention Network for Nested Named Entity Recognition.md",
     "Papers",
     "NER Methods",
     "Data Sets"

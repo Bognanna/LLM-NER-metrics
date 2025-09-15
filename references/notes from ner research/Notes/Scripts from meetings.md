@@ -2,7 +2,7 @@
 Następne spotkanie 18.09 godz 11:30
 TODO
 1) Przygotować "benchmark" - kilka przykładów co jest bardziej preferowane od czego:
-		|Anna i Jan Kowalscy| < |Anna| |Jan Kowalscy| < |Anna Kowalska| |Jan Kowalski| < |Anna Kowalscy| |Jan Kowalscy|
+		|Anna i Jan Kowalscy| < |Anna| |Jan Kowalscy| < |Anna Kowalska| |Jan Kowalski| < |Anna Kowalscy| |Jan Kowalscy| 
 2) Dobracować metrykę, aby:
 	   - spełniała zbiór benchmarkowy,
 	   - działała na lokalnym embeddingu (do sprawdzenia gemma3, oraz zbiór subtokenów (eg. fasttext)) - wszystko co odpali się na ollamie jest ok,

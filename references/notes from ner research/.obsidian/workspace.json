@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Scripts from meetings.md",
+                "file": "Notes/Metric proposals.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scripts from meetings"
+              "title": "Metric proposals"
             }
           }
         ],
@@ -178,9 +178,9 @@
   },
   "active": "4dc3c5b8c07e9888",
   "lastOpenFiles": [
+    "Notes/Scripts from meetings.md",
     "Untitled",
     "Untitled.base",
-    "Notes/Scripts from meetings.md",
     "Data Sets/CoNLL-2003.md",
     "Notes/Metric proposals.md",
     "Notes/Przydatne linki.md",

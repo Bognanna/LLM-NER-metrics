@@ -1,3 +1,8 @@
+Zestaw 3 metryk:
+- precision & recall dla tego ile w ogóle encji udało się znaleźć LLMowi, czy jakiś nie zhalucynował i nie ma ich za dużo (stopień pokrycia)
+- max avg cos sim of embeddings (jakość dopasowania)
+	- zamiast max, możliwe jakieś mądrzejsze przeróbki (np. wpierw algorytm zachłanny do dopasowania jak największej liczby embeddingów, a potem max dla reszty)
+	- należy sformułować aksjomaty dla metryki, dzięki którym będziemy wiedzieli, czy potrzebny jest np. zakres <-1;1>
 
 1) Wykorzystanie embeddingów:
 	- średnia? odległość wychwyconych przez LLM encji od przygotowanych złotych encji

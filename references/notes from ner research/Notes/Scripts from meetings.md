@@ -1,3 +1,26 @@
+Do przegadania:
+-> problematyczne encje - czy miał Pan okazję spojrzeć na nie i potwierdzić, że zgadzamy się co do nich
+-> użyłam chatu do rozszerzenia benchmarku do ponad 100 przykładów, mam nadzieję, że nie ma tam jakiś poważniejszych błędów, które bym miała przeoczyć
+-> ustawić jakiś treshold podpobieństwa dla którego w ogóle uznajemy 2 encje jako złączone razem? (na potrzeby found entities measure)
+-> podejście 1.1 b daje lepsze rezultaty na benchmarku, czy jest sens zostawiać oba, żeby w pracy magisterskiej dać porównanie czemu b zostało wybrane kosztem a ?
+-> do rozważenia przy podejściu 1.1 b: zastanowić się co z remisami w tabelce - zdać się na działanie argmax(), czy może w jakiś inny sposób decydować o tym, które dwie encje zostaną sparowane?
+
+
+09.10.2025
+Następne spotkanie 23.10 godz. 11:30
+1) Na negacje istnieje jakiś negation detection algorithm z lat 90', więc problemu chyba nie musimy tykać.
+2) Problem z nested wydaje się być dość na siłę - na to może być algorytm, który by rozszerzał istniejące już encje.
+3) Pod uwagę bierzemy finalnie problemy: discontinuous, oraz long entity spans <- wydają się fajnie uzupełniać
+4) Można przyjrzeć się z ciekawości jak inne metody radziły sobie z sequence tagging w przypadku, gdy jedno słowo było częścią kilku encji np. abdominal w :  "The abdominal gas,cramps and discomfort"
+5) Niby jest opcja LLM as a judge, aczkolwiek mi się nie podoba, bo wtedy wyniki dawane przez metrykę przestają byś determistrzyne
+6) Wyzwania dla metryki:
+	1) Ground Truth = złoty standard,
+	2) Utworzyć coś na wzór F1 score, obsługujące precission i recall - liczą liczbę dokładnych encji
+	3) Do semantycznego podobieństwa można dać algorytm zahłanny na dobieranie encji w pary
+
+TODO
+Wysłać kilka przykładów zdań
+
 18.09.2025
 Następne spotkanie 2.10 godz. 11:30
 
@@ -8,9 +31,6 @@ Adnotatorzy uznali tutaj 2 encje: "abdominal gas", "abdominal cramps and pain"
 Ale już później: "The abdominal gas,cramps and discomfort"
 Adnotatorzy uznali tutaj 3 encje: "abdominal gas", "abdominal cramps", "abdominal dyscomfort"
 
-Jak oznaczać labele discontinuous encji?
-	T6	ADR 152 161;166 181	abdominal cramps and pain
-	T4	ADR 152 161;162 165	abdominal gas
 
 Problematyczne przypadki:
 1) Discountinuous entity

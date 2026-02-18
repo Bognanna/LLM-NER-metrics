@@ -1,0 +1,1 @@
+Jak do tego podejść? Z czym porównywać? Czy są w ogóle potrzebne?

@@ -12,6 +12,7 @@ tagging schemes:
 ## Notes
 - easy to access
 - cadec.v2 contains txt files
+- entity types: ADR (Adverse Drug Reaction), Drug, Disease, Symptom, Finding,
 
 ## Data structure
 #### CADECv1

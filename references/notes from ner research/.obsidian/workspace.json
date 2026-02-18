@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "466b1054aecdf274",
+        "id": "cfd9e32db5a00475",
         "type": "tabs",
         "children": [
           {
-            "id": "e2a9d9b5caa4eada",
+            "id": "a6a0129172047b80",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Scripts from meetings.md",
+                "file": "TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Scripts from meetings"
+              "title": "TODO"
+            }
+          },
+          {
+            "id": "1bee57f7b892ab40",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Data Sets/CADEC.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CADEC"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -161,36 +176,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e2a9d9b5caa4eada",
+  "active": "2a53d03d59579a6b",
   "lastOpenFiles": [
-    "Notes/Metric proposals.md",
-    "Notes/Scripts from meetings.md",
-    "Untitled.base",
-    "Untitled",
-    "Data Sets/CoNLL-2003.md",
+    "TODO.md",
+    "Notes/Benchmark.md",
     "Notes/Przydatne linki.md",
+    "Notes/Metryka.md",
+    "Untitled.base",
+    "template.md",
+    "Bibliography.md",
+    "Papers/A Span-Based Model for Joint Overlapped and Discontiunuous Named Entity Recognition.md",
+    "Papers/A Supervised Multi-Head Self-Attention Network for Nested Named Entity Recognition.md",
+    "Papers/Discontinuous Named Entity Recognition as Maximal Clique Discovery.md",
+    "Papers/Locate and Label - A Two-stage Indentifier for Nested Named Entity Recognition.md",
+    "Papers/Nested Named Entity Recognition as Latent Lexicalized Constituency Parsing.md",
+    "Papers/Neural Architectures for Named Entity Recognition.md",
+    "Papers/Rethinking Boundaries End-To-End Recognition of Discontinuous Mentions with Pionter Networks.md",
+    "Papers/Span-based Unified Named Entity Recognition Framework via Contrastive Learning.md",
+    "Papers/TriG-NER - Triplet-Grid Framework for Discontinuous Named Entuty Recognition.md",
+    "Papers/Unified Named Entity Recognition as Word-Word Relation Classification.md",
+    "Notes/Scripts from meetings.md",
+    "Use Cases/Use Cases.md",
+    "Notes/Testy.md",
+    "_old",
+    "_old/Metric proposals.md",
+    "Use Cases",
+    "NER Methods/Span Based.md",
+    "NER Methods/Transition Based.md",
+    "Data Sets/CoNLL-2003.md",
     "Data Sets/CADEC.md",
     "Notes",
-    "Papers/Unified Named Entity Recognition as Word-Word Relation Classification.md",
     "Data Sets/BioNLP.md",
-    "Papers/Span-based Unified Named Entity Recognition Framework via Contrastive Learning.md",
-    "Papers/A Span-Based Model for Joint Overlapped and Discontiunuous Named Entity Recognition.md",
-    "Papers/TriG-NER - Triplet-Grid Framework for Discontinuous Named Entuty Recognition.md",
-    "Papers/Neural Architectures for Named Entity Recognition.md",
-    "Papers/Nested Named Entity Recognition as Latent Lexicalized Constituency Parsing.md",
-    "Papers/Locate and Label - A Two-stage Indentifier for Nested Named Entity Recognition.md",
-    "Data Sets/MIT movie.md",
-    "Data Sets/MIT restaurant.md",
-    "Data Sets/OntoNotes.md",
-    "Papers/Rethinking Boundaries End-To-End Recognition of Discontinuous Mentions with Pionter Networks.md",
-    "Data Sets/GENIA.md",
-    "Data Sets/ACE 2005.md",
-    "Data Sets/ACE 2004.md",
-    "Bibliography.md",
-    "Data Sets/JNLPBA.md",
-    "Data Sets/CoNLL-2002.md",
-    "Data Sets/ShARe 13.md",
-    "Data Sets/ShARe 14.md",
     "Papers",
     "NER Methods",
     "Data Sets"

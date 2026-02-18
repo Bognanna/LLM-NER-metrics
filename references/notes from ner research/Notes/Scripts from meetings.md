@@ -1,9 +1,76 @@
+26.02.2025
+Do omówienia:
+1. Co z abstrakcyjnym przypadkiem, gdy encje składają się z nic nieznaczącego zlepku liter i znaków? Czy badać w ogóle taki przypadek? Tradycyjne metryki dałyby po prostu wartość 0.
+2. Czy edytować encje w benchmarku, skoro 1 do 1 pochodzą one z zbioru Cadec? Jak finalnie zedytować encje w benchmarku: ujednolicenie zaimków (?), ujednolicenie form czasowników (?), ujednolicenie kolejności słów (?), skrócenie opisowych form episodes of vomiting vs. vomiting episodes (?), zostawiać określenia np. sligtly (?), jakieś standardowe znaki np. and zamiast & (?)
+
+
+Cel na ten tydzień:
+- wyłapać wszystkie kwestie, które potrzebuję żeby kod był dopięty i profesjonalny:
+	- pytania dotyczące benchmarku
+	- potwierdzenie metryki
+
+11.12.2025
+Następne spotkanie 15.01.2025 godz. 11:30
+Chcę ustalić do czego dążę, aby uznać pracę za skończoną:
+-> dopracowana metryka - czy skupić się na 1, czy może dla pracy lepiej wyjdzie jak zaproponuję jeszcze 2. ? Czy może trzebaby się zastanowić na różnych odmianach tej metryki?
+-> testy metryki, porównujące ją z innymi metrykami, na oficjalnych benchmarkach
+-> poza benchmarkiem, to utworzyć też use cases (oczekiwania co do tego jak metryka powinna działać)
+-> zebranie wszystkiego w pracę (chcę ją pisać po angielsku): wstęp, opis tego jak dotąd mierzono jakość NER, wyjaśnienie dlaczego ma to swoje problemy, przedstawienie metryki i wyjaśnienie jej zasad działania, implementacja metryki + opis prac programistycznych, przedstawienie wyników testów na benchmarku, wnioski, dalsze prace, bibliografia
+-> szerszy opis tego, czym jest problem NER, related work - wprowadzenie encji nieciągłych z przykładami, metryki oceny, intent (akt dialogowy, byt w konwersacji - trochę jak encja, ale mniej konkretny np. typ kuchni + preferowana godzina + preferowana data rezerwacji), przedstawienie metryki, informacje o benchmarkach, podsumowanie
+-> czym to się różni od paperów, które czytałam? Przecież tam przedstawiano nowe metody, a całość mieściła się z reguły na 14 stronach.
+
+
+20.11.2025
+Następne spotkanie 11.12.2025
+-> poprawić benchamrk, tak żeby uwzględniał też tagi, oraz poprawki na mailu
+-> na razie olewamy problem healthy/not healthy/ill
+-> metrykę zrobić tak jak F1 score - dwa komponenty, a z nich średnia harmoniczna
+-> poprawka laplasa (jak w naive bayes) przy dzieleniu przez 0 (https://towardsdatascience.com/laplace-smoothing-in-naive-bayes-algorithm-9c237a8bdece/)
+
+TODO
+* poprawić benchmark, tak aby zawierał tagi
+* implementacja 2. metryki
+* zaproponować metrykę w oparciu o F1 score/ średnią harmoniczną/f-beta score
+* dodać poprawkę laplasa tam gdzie jest ryzyko dzielenia przez 0
+* porównać dawane wyniki z istniejącymi podejściami
+* zaimplementować precission/recall według propozcyji (2a/(a+b))
+
+Do przegadania:
+*-> ustawić jakiś treshold podpobieństwa dla którego w ogóle uznajemy 2 encje jako złączone razem? (na potrzeby found entities measure)*
+*-> przedstawić aktualny stan drugiego podejścia*
+-> będzie trzeba uwzględnić w benchamarku oraz przy metrykach gold_labels, jeżeli chcemy cokolwiek porównywać:
+	- gold labels i predicted labels jako osobna lista,
+	- podejście 0/1 - jeżeli label jest prawidłowo przypisany, mnożymy miarę podobieństwa * 1, jeżeli nie jest to * 0? <- to podejście oznacza, że nawet jeżeli LLM prawidłowo wskaże span, to jeżeli źle je oznaczy, to będzie otrzymywał najniższy wynik 0 - przypominamy, że skala aktualnie wynosi <-1;1>
+-> porównywanie ze sobą metryk:
+	- do rozważenia czy wszystko z zakresu <-1;0> nie sprowadzać do 0? Czy nam w ogóle zależy na rozróżnieniu nieskorelowanych ze sobą zdań od tych przeciwnych - albo inna opcja - (x+1)/2
+	- zoinks z Ollamą i proponowanymi embeddingami: te o przeciwnym wydawałoby się znaczeniu, mają wartość dodatnią podobieństwa cosinusowego i i tak są bardziej podobne niż te nieskorelowane ze sobą
+-> propozycja zmiany metryki liczby znalezionych encji na: 2*|generated|/(|generated|+|gold|) - 1, wtedy zakres metryki będzie wynosił <-1;1>, gdzie wynik <-1;0) oznacza nieznalezione encje, 0 - znalezione, (0;1> zhalucynowane encje - z minusów: gorszy w interpretacji niż poprzedni, z plusów - pozbywamy się +oo z zakresu
+- co z dzieleniem przez 0? lepszym podejściem jest danie warunku, że jak 0 to 0, czy dodanie jakiejś mikro wartości do mianownika?
+
+
+31.10.2025
+Następne spotkanie: 13.11.2025 godz. 11:30
+1) Problematyczne encje dopiero zostaną przejrzane przez promotora - zagubił się gdzieś mail
+2) Możliwe, że benchamark będzie trzeba wzbogacić o jakieś nietypowe przykłady na które chat nie wpadł
+3) Aby porównać nowe podejście z starym (max avg cos sim) starczy dać kilka przykładów dla których podejście a gorzej sobie radziło od podejścia b
+4) Remisy w tabelce można rozwiązywać losowo (więc w sumie argmax() chyba może być)
+
+TODO:
+- porównać dawane wyniki z tradycyjnymi wynikami
+- zastanowić się jak przełożyć rezultaty tradycyjnych metryk na rezultaty opracowanej metryki
+- <-1; + oo) <- jak to porównać z istniejącym paradygmantem (precission + recall)
+- przy porównaniach przyjrzeć się f-beta score
+- 2. podejście
+
 Do przegadania:
 -> problematyczne encje - czy miał Pan okazję spojrzeć na nie i potwierdzić, że zgadzamy się co do nich
 -> użyłam chatu do rozszerzenia benchmarku do ponad 100 przykładów, mam nadzieję, że nie ma tam jakiś poważniejszych błędów, które bym miała przeoczyć
--> ustawić jakiś treshold podpobieństwa dla którego w ogóle uznajemy 2 encje jako złączone razem? (na potrzeby found entities measure)
--> podejście 1.1 b daje lepsze rezultaty na benchmarku, czy jest sens zostawiać oba, żeby w pracy magisterskiej dać porównanie czemu b zostało wybrane kosztem a ?
+-> podejście 1.1 b daje lepsze rezultaty na benchmarku, czy jest sens zostawiać oba, żeby w pracy magisterskiej dać porównanie czemu b zostało wybrane kosztem a ? (lepiej dać podejście anegdotyczne)
 -> do rozważenia przy podejściu 1.1 b: zastanowić się co z remisami w tabelce - zdać się na działanie argmax(), czy może w jakiś inny sposób decydować o tym, które dwie encje zostaną sparowane?
+
+
+
+
 
 
 09.10.2025

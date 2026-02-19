@@ -1,9 +1,10 @@
 1. Implementacja
 	1. Benchmark
 		- [x] Wywalić sentence
-		- [ ] Napisać instrukcję dla LLM, który korzystając z enum, przypisze brakujące klasy encjom
-		- [ ] Dodać tagi, tworząc 3 rodzaje przykładów w benchmarku: test encji (tagi zawsze dobre), test tagów (encje zawsze dobre), test wszystkiego (zarówno tagi jak i encje mogą być błędne)
+		- [x] Dodać tagi, tworząc 3 rodzaje przykładów w benchmarku: test encji (tagi zawsze dobre), test tagów (encje zawsze dobre), test wszystkiego (zarówno tagi jak i encje mogą być błędne)
 		- [ ] Poprawić encje: ujednolicenie zaimków (?), ujednolicenie form czasowników (?), ujednolicenie kolejności słów (?)
+		- [ ] Dodać id do każdego tripla
+		- [ ] Poprawić test_types
 	2. Use Cases
 		- [ ] Spisać Use Cases
 		- [ ] Przetestować metrykę w obu wersjach na każdym z Use Casów

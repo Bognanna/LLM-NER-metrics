@@ -1,0 +1,3 @@
+- benchmark generation: generating part of the triples - GPT-4o
+- debugging: help with debugging Python code - GPT-5
+- 

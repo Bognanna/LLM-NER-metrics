@@ -2,6 +2,7 @@
 Do omówienia:
 1. Co z abstrakcyjnym przypadkiem, gdy encje składają się z nic nieznaczącego zlepku liter i znaków? Czy badać w ogóle taki przypadek? Tradycyjne metryki dałyby po prostu wartość 0.
 2. Czy edytować encje w benchmarku, skoro 1 do 1 pochodzą one z zbioru Cadec? Jak finalnie zedytować encje w benchmarku: ujednolicenie zaimków (?), ujednolicenie form czasowników (?), ujednolicenie kolejności słów (?), skrócenie opisowych form episodes of vomiting vs. vomiting episodes (?), zostawiać określenia np. sligtly (?), jakieś standardowe znaki np. and zamiast & (?)
+3. Pisząc na jaką formę powinnam się zdecydować (bezosobowa czy też wszędzie I/We)?
 
 
 Cel na ten tydzień:

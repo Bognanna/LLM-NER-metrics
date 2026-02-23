@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "My work/Benchmark.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
+              "title": "Benchmark"
             }
           }
         ]
@@ -163,10 +163,10 @@
   },
   "active": "7928668de21723d6",
   "lastOpenFiles": [
-    "My work/Benchmark.md",
     "Notes/Benchmark.md",
-    "Notes/Scripts from meetings.md",
     "TODO.md",
+    "My work/Benchmark.md",
+    "Notes/Scripts from meetings.md",
     "My work/Metric.md",
     "Notes/Metryka.md",
     "Metric.md",

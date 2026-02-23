@@ -3,18 +3,18 @@
 		- [x] Wywalić sentence
 		- [x] Dodać tagi, tworząc 3 rodzaje przykładów w benchmarku: test encji (tagi zawsze dobre), test tagów (encje zawsze dobre), test wszystkiego (zarówno tagi jak i encje mogą być błędne)
 		- [ ] Poprawić encje: ujednolicenie zaimków (?), ujednolicenie form czasowników (?), ujednolicenie kolejności słów (?)
-		- [ ] Dodać id do każdego tripla
-		- [ ] Poprawić test_types
+		- [x] Dodać id do każdego tripla
+		- [x] Poprawić test_types
 	2. Use Cases
 		- [ ] Spisać Use Cases
 		- [ ] Przetestować metrykę w obu wersjach na każdym z Use Casów
 	3. Metryka
-		- [ ] Fbeta-score zamiast F1-score
-		- [ ] Ujednolicić miary tak, aby obydwie były najlepsze dla 1 i najgorsze dla 0 (albo odwrotnie)
-		- [ ] Zaimplementować metrykę w jej ostatecznej formie
+		- [x] Fbeta-score zamiast F1-score
+		- [x] Ujednolicić miary tak, aby obydwie były najlepsze dla 1 i najgorsze dla 0 (albo odwrotnie)
+		- [x] Zaimplementować metrykę w jej ostatecznej formie
 	4. Testy
 		- [ ] Przetestować metrykę w obu wersjach na Use Cases
-		- [ ] Przeprowadzić testy na benchmarku
+		- [x] Przeprowadzić testy na benchmarku
 		- [ ] Zaplanować testy na podstawie innych prac
 		- [ ] Utworzyć zbiór testowy
 		- [ ] Przeprowadzić testy

@@ -4,7 +4,7 @@ Do omówienia:
 2. Czy edytować encje w benchmarku, skoro 1 do 1 pochodzą one z zbioru Cadec? Jak finalnie zedytować encje w benchmarku: ujednolicenie zaimków (?), ujednolicenie form czasowników (?), ujednolicenie kolejności słów (?), skrócenie opisowych form episodes of vomiting vs. vomiting episodes (?), zostawiać określenia np. sligtly (?), jakieś standardowe znaki np. and zamiast & (?)
 3. Pisząc na jaką formę powinnam się zdecydować (bezosobowa czy też wszędzie I/We)?
 4. Dlaczego CDEF-0.0 oraz CDE nie dają takiej samej liczby zdanych testów?
-
+5. Czy aby uniknąć błędów związanych z niedokładnością obliczeniową przy floatach, założyć jakiś margines przy porównywaniu ze sobą liczb (case 90, 92 z CDEF-0.0)?
 
 Cel na ten tydzień:
 - wyłapać wszystkie kwestie, które potrzebuję żeby kod był dopięty i profesjonalny:

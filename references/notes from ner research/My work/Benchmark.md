@@ -13,5 +13,22 @@ The benchmark consist of 3 files. Each file is created to examine behaviour of d
 The benchmark was created partialy manually and pariatlly with use of LLM. Part of gold entities comes from CADEC dataset. For these gold enitites, "B" and "C" sets are created manually. The rest of triples is created with the use of model GPT-4o.
 All gold entities are of type "ADR" (Adverse Drug Reaction). To examine the performance of the metric for different entity types, for "B" and "C" sets, some of entities is marked as "Drug" type. The rest of entites is also of "ADR" type.
 
-
-
+# Conclusions from the tests on the benchmark:
+- **exhaustive_CDE** performes worse than **CDE** for test_types.json triples: 121, 123, 125, 126, 128, 129 - all have in common that |A| == 2. |B| == 1, |C| == 2 
+  
+	  {"A": \[\["dry mouth upon waking", "ADR"], \["headache", "ADR"]], 
+	  "B": \[\["dry mouth upon waking", "Drug"]], 
+	  "C": \[\["dry mouth upon waking", "Drug"], \["headache", "Drug"]], 
+	  "ID": 128},
+	  
+	It is worth to notice, that "B" is not arbitrally better than "C".
+-  there are cases (e.g test_similarities.json, 90, 92) where **CDE** performes better then **CDEF-0.0**. In theory there should not be difference between them, because **CDEF-0.0** = **CDE**, however in implementation floats are used and in cases where there are ties between CDE(a,b) and CDE(a,c); CDEF-0.0(a,b) <> CDEF-0.0(a,c) by a minor value
+  
+	  {"A": \[\["bloated stomach", "ADR"], \["gassy stomach", "ADR"]],
+	  "B": \[\["bloating", "ADR"], \["stomach", "ADR"]],  
+	   "C": \[\["head", "ADR"], \["bloating", "ADR"], \["stomach", "ADR"]], 
+	   "ID": 92}
+- CDEF best performance:
+  test_similarities.json: beta ~ 0.36
+  test_types.json: any beta
+  test_mix.json: beta ~ 1.5

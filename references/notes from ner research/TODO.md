@@ -6,19 +6,21 @@
 		- [x] Dodać id do każdego tripla
 		- [x] Poprawić test_types
 	2. Use Cases
-		- [ ] Spisać Use Cases
-		- [ ] Przetestować metrykę w obu wersjach na każdym z Use Casów
+		- [x] Spisać Use Cases
 	3. Metryka
 		- [x] Fbeta-score zamiast F1-score
 		- [x] Ujednolicić miary tak, aby obydwie były najlepsze dla 1 i najgorsze dla 0 (albo odwrotnie)
 		- [x] Zaimplementować metrykę w jej ostatecznej formie
+		- [ ] Poprawić sposób podawania danych do metryk, tak żeby nie było wymagane używanie for in zip
+		- [ ] Poprawić sposób podawania danych do get_embeddings, tak żeby nie trzeba było pakować encji w listę
 	4. Testy
-		- [ ] Przetestować metrykę w obu wersjach na Use Cases
+		- [x] Przetestować metrykę w obu wersjach na Use Cases
 		- [x] Przeprowadzić testy na benchmarku
 		- [x] Zbadaj zachowanie dla beta=0.0 przy mix i sim
 		- [ ] Zaplanować testy na podstawie innych prac
 		- [ ] Utworzyć zbiór testowy
 		- [ ] Przeprowadzić testy
+
 2. Praca
 	1. Abstrakt
 	2. Wstęp

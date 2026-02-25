@@ -1,3 +1,4 @@
 - benchmark generation: generating part of the triples - GPT-4o
 - debugging: help with debugging Python code - GPT-5
-- 
+- use cases: generating part of use cases - GPT-4o
+- embeddings: nomic-embed-text

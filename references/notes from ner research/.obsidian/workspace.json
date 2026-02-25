@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "My work/Benchmark.md",
+                "file": "TODO.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Benchmark"
+              "title": "TODO"
             }
           }
         ]
@@ -163,15 +163,16 @@
   },
   "active": "7928668de21723d6",
   "lastOpenFiles": [
-    "My work/Metric.md",
-    "My work/Benchmark.md",
-    "Notes/Benchmark.md",
-    "Notes/Scripts from meetings.md",
-    "TODO.md",
-    "Notes/Metryka.md",
-    "Metric.md",
+    "Use Cases/Use Cases.md",
     "My work/Gen AI Use.md",
     "Research/Data Sets/CADEC.md",
+    "TODO.md",
+    "My work/Benchmark.md",
+    "My work/Metric.md",
+    "Notes/Benchmark.md",
+    "Notes/Scripts from meetings.md",
+    "Notes/Metryka.md",
+    "Metric.md",
     "My work",
     "Research",
     "Notes/Przydatne linki.md",
@@ -188,7 +189,6 @@
     "Research/Papers/Span-based Unified Named Entity Recognition Framework via Contrastive Learning.md",
     "Research/Papers/TriG-NER - Triplet-Grid Framework for Discontinuous Named Entuty Recognition.md",
     "Research/Papers/Unified Named Entity Recognition as Word-Word Relation Classification.md",
-    "Use Cases/Use Cases.md",
     "Notes/Testy.md",
     "_old",
     "_old/Metric proposals.md",

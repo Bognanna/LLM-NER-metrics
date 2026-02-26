@@ -16,12 +16,17 @@ def get_text_embedding_using_ollama(text:str):
 
 def get_embeddings(entity_type:list):
     embed_type = []
-    
-    for entry in entity_type:
-        new_entry = []
-        for [entity, type] in entry:
-            embed = get_text_embedding_using_ollama(entity)[0]
-            new_entry.append([embed, type])
-        embed_type.append(new_entry)
+
+    for [entity, type] in entity_type:
+        embed = get_text_embedding_using_ollama(entity)[0]
+        embed_type.append([embed, type])
 
     return embed_type
+
+def get_embeddings_for_list(list_of_entities:list)->list:
+    list_of_embeddings = []
+
+    for entry in list_of_entities:
+        list_of_embeddings.append(get_embeddings(entry))
+
+    return list_of_embeddings

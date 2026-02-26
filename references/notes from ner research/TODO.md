@@ -11,8 +11,8 @@
 		- [x] Fbeta-score zamiast F1-score
 		- [x] Ujednolicić miary tak, aby obydwie były najlepsze dla 1 i najgorsze dla 0 (albo odwrotnie)
 		- [x] Zaimplementować metrykę w jej ostatecznej formie
-		- [ ] Poprawić sposób podawania danych do metryk, tak żeby nie było wymagane używanie for in zip
-		- [ ] Poprawić sposób podawania danych do get_embeddings, tak żeby nie trzeba było pakować encji w listę
+		- [x] Poprawić sposób podawania danych do metryk, tak żeby nie było wymagane używanie for in zip
+		- [x] Poprawić sposób podawania danych do get_embeddings, tak żeby nie trzeba było pakować encji w listę
 	4. Testy
 		- [x] Przetestować metrykę w obu wersjach na Use Cases
 		- [x] Przeprowadzić testy na benchmarku

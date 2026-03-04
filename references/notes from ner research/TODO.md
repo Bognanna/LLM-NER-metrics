@@ -17,6 +17,8 @@
 		- [x] Przetestować metrykę w obu wersjach na Use Cases
 		- [x] Przeprowadzić testy na benchmarku
 		- [x] Zbadaj zachowanie dla beta=0.0 przy mix i sim
+		- [x] Dodać do testów use case testy na zwykłych metrykach
+		- [x] Porównanie działania metryk na use case
 		- [ ] Zaplanować testy na podstawie innych prac
 		- [ ] Utworzyć zbiór testowy
 		- [ ] Przeprowadzić testy

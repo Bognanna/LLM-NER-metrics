@@ -2,6 +2,7 @@ http://scikit.ml/ <- biblioteka pythonowa do multilabelingu
 
 https://www.boundaryml.com/ <- structured output
 
+evaluation_metrics_for_large_language_models_in_a_named_entity_extraction_task
 ### Do przejrzenia
 https://openreview.net/forum?id=feAbrMXGMh
 - metryka complementary
@@ -33,3 +34,6 @@ https://aclanthology.org/2024.findings-acl.126/
 - porównali jak różne metryki Rouge 1, 2, L, Bert-Score, GPT-Score oceniają jakoś pisania słabych i mocnych modeli, a następnie % wyrazili zmianę oceny, pokazując, że ich metryka dała największą różnicę
 - porównują za pomocą Spearman correlation wyniki z human evaluation score
 - human evaluation: Chosen and Rejected text
+
+https://arxiv.org/abs/2305.14450
+https://github.com/FreedomIntelligence/Evaluation-of-ChatGPT-on-Information-Extraction

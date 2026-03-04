@@ -3,8 +3,10 @@ Do omówienia:
 1. Co z abstrakcyjnym przypadkiem, gdy encje składają się z nic nieznaczącego zlepku liter i znaków? Czy badać w ogóle taki przypadek? Tradycyjne metryki dałyby po prostu wartość 0.
 2. Czy edytować encje w benchmarku, skoro 1 do 1 pochodzą one z zbioru Cadec? Jak finalnie zedytować encje w benchmarku: ujednolicenie zaimków (?), ujednolicenie form czasowników (?), ujednolicenie kolejności słów (?), skrócenie opisowych form episodes of vomiting vs. vomiting episodes (?), zostawiać określenia np. sligtly (?), jakieś standardowe znaki np. and zamiast & (?)
 3. Pisząc na jaką formę powinnam się zdecydować (bezosobowa czy też wszędzie I/We)?
-4. Dlaczego CDEF-0.0 oraz CDE nie dają takiej samej liczby zdanych testów?
-5. Czy aby uniknąć błędów związanych z niedokładnością obliczeniową przy floatach, założyć jakiś margines przy porównywaniu ze sobą liczb (case 90, 92 z CDEF-0.0)?
+4. Czy aby uniknąć błędów związanych z niedokładnością obliczeniową przy floatach, założyć jakiś margines przy porównywaniu ze sobą liczb (case 90, 92 z CDEF-0.0)?
+5. F1, precission, recall: czy mogę sobie pozwolić na dorzucenie tam algorytmu spasowującego ze sobą gold_entities i generated_entities? Mogę też skorzystać z implementacji, jaką znalazłam przy jakiejś innej pracy, tylko że jest ona dostosowana pod zupełnie inny format argumentów, więc musiałabym dodatkowo poprzekształcać generated i gold zbiory.
+   Na ten moment mam trochę oszukańcze to szukanie tp/fp/fn, gdyż nie zwracam uwagi na kolejność encji ani ich powtarzanie się.
+6. Na ile istotne jest to co programuje a na ile same wyniki i teoria stojąca za metryką? Czy są jakieś standardy, które musi spełniać mój kod (np. korzystanie z klas, pisanie optymalnych fragmentów kodu)?
 
 Cel na ten tydzień:
 - wyłapać wszystkie kwestie, które potrzebuję żeby kod był dopięty i profesjonalny:

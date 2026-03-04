@@ -15,6 +15,7 @@ Keep in mind, that entities could be discontinuous, long and descriptive.
 {types}
 """
 
+
 class Entity(BaseModel):
     entity: str
     type: str
@@ -33,12 +34,17 @@ class EntitiesList(BaseModel):
 def __set_types(types: List[str]):
     Entity.allowed_types = types
 
-def get_entities_from_llm(sentence: str, types: List[str]) -> str:
+def get_entities_from_llm(
+        sentence: str, 
+        types: List[str], 
+        model:str='llama3.1', 
+        prompt:str=prompt
+    ) -> str:
 
     __set_types(types)
 
     response = chat(
-        model='llama3.1',
+        model=model,
         format=EntitiesList.model_json_schema(),
         messages=[
             {

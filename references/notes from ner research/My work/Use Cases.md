@@ -1,4 +1,8 @@
 
+# Description
+
+Use Cases concern two types of NER problems: discontinuous entitites and long, descriptive entity spans:
+
 1) Discontinuous enitites
 	a) The patient reported pain in the lower back and occasionally in the right leg. 
 > 	a.1) pain in the lower back  
@@ -20,7 +24,7 @@
 > 	e.2) abdominal cramps  
 > 	e.3) abdominal pain
 
-1) Long, descriptive entities
+2) Long, descriptive entities
 > a) Without this drug I was severly restricted and could only walk less than 100 meters. 
 > 	a.1) could only walk less than 100 meters  
 >  
@@ -34,3 +38,14 @@
 > 	d.1) strong intravenous medicine
 > 	d.2) swelling in the brain
 > 	d.3) immune system attacking itself
+
+## Metrics
+- CDE
+- exhaustive_CDE
+- EF
+- CDEF-0.5
+- CDEF-1.0
+- CDEF-1.5
+- F1
+- precision
+- recall

@@ -7,7 +7,7 @@ Sets "A", "B" and "C" forms together a triple. Each file consists of 130 triples
 - triples with IDs 120-129: (|A| >= |B| and |A| <= |C|) or (|A| <= |B| and |A| >= |C|).
 The benchmark consist of 3 files. Each file is created to examine behaviour of different aspect of the metric.
 - test_similarities.json is used to examine the performance of the metric according to differences between entities - therefore entity types in each set are perseved the same ad golden types.
-- test_types.json is used to examine the performance of the metric according to differences between entity types - therefore entities in each set are perseved the same ad golden entities.
+- test_types.json is used to examine the performance of the metric according to differences between entity types - therefore entities in each set are perseved the same as gold entities.
 - test_mix.json is used to examine the performance of the metric according to differences between entities and differences between entity types.
 # Data description
 The benchmark was created partialy manually and pariatlly with use of LLM. Part of gold entities comes from CADEC dataset. For these gold enitites, "B" and "C" sets are created manually. The rest of triples is created with the use of model GPT-4o.
@@ -22,7 +22,7 @@ All gold entities are of type "ADR" (Adverse Drug Reaction). To examine the perf
 	  "ID": 128},
 	  
 	It is worth to notice, that "B" is not arbitrally better than "C".
--  there are cases (e.g test_similarities.json, 90, 92) where **CDE** performes better then **CDEF-0.0**. In theory there should not be difference between them, because **CDEF-0.0** = **CDE**, however in implementation floats are used and in cases where there are ties between CDE(a,b) and CDE(a,c); CDEF-0.0(a,b) <> CDEF-0.0(a,c) by a minor value
+-  there are cases (e.g test_similarities.json, 90, 92) where **CDE** performes better then **CDEF-0.0**. In theory there should not be difference between them, however in implementation floats are used and in cases where there are ties between CDE(a,b) and CDE(a,c); CDEF-0.0(a,b) <> CDEF-0.0(a,c) by a minor value
   
 	  {"A": \[\["bloated stomach", "ADR"], \["gassy stomach", "ADR"]],
 	  "B": \[\["bloating", "ADR"], \["stomach", "ADR"]],  

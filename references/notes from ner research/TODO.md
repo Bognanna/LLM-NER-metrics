@@ -5,6 +5,9 @@
 		- [ ] Poprawić encje: ujednolicenie zaimków (?), ujednolicenie form czasowników (?), ujednolicenie kolejności słów (?)
 		- [x] Dodać id do każdego tripla
 		- [x] Poprawić test_types
+		- [x] zobaczyć dlaczego pojawiają się błędy w exh_CDE przy type
+		- [ ] zobaczyć dlaczego pojawiają się błędy w CDE 40-79 SIM
+		- [ ] poprawić aby zapisywało się CDEF-0.0
 	2. Use Cases
 		- [x] Spisać Use Cases
 	3. Metryka
@@ -22,6 +25,8 @@
 		- [ ] Zaplanować testy na podstawie innych prac
 		- [ ] Utworzyć zbiór testowy
 		- [ ] Przeprowadzić testy
+		- [ ] Dodać do testów F1-score z soft matching?
+
 
 2. Praca
 	1. Abstrakt

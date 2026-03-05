@@ -15,7 +15,7 @@ def __cosine_distance_of_embeddings(a:list, b:list) -> float:
 
     return __cosine_distance(a[0], b[0])
 
-def __find_min_idx(x):
+def __find_min_dist(x):
     k = x.argmin()
     ncol = x.shape[1]
     return int(k/ncol), int(k%ncol)
@@ -31,7 +31,7 @@ def CDE(gold_embeddings:list, generated_embeddings:list) -> float:
     cumulative_distance = 0.0
 
     while distance_matrix.any():
-        max_i, max_j = __find_min_idx(distance_matrix)
+        max_i, max_j = __find_min_dist(distance_matrix)
         cumulative_distance += distance_matrix[max_i, max_j]
         distance_matrix = np.delete(distance_matrix, max_i, axis=0)
         distance_matrix = np.delete(distance_matrix, max_j, axis=1)
@@ -49,7 +49,7 @@ def exhaustive_CDE(gold_embeddings:list, generated_embeddings:list) -> float:
         short_list = generated_embeddings
         long_list = gold_embeddings
 
-    minimal_cumulative_distance = 2.0
+    minimal_average_distance = 2.0
 
     for combination in list(combinations(long_list, min_len)):
         for permutation in list(permutations(combination)):
@@ -58,10 +58,10 @@ def exhaustive_CDE(gold_embeddings:list, generated_embeddings:list) -> float:
             for a, b in zip(permutation, short_list):
                 cumulative_distance += __cosine_distance_of_embeddings(a, b)
 
-            minimal_cumulative_distance = min(
-                minimal_cumulative_distance, cumulative_distance)
+            minimal_average_distance = min(
+                minimal_average_distance, cumulative_distance/min_len)
     
-    return minimal_cumulative_distance/min_len
+    return minimal_average_distance
 
 def EF(gold_embeddings:list, generated_embeddings:list) -> float:
     a = len(gold_embeddings)

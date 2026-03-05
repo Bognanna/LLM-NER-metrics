@@ -37,3 +37,14 @@ https://aclanthology.org/2024.findings-acl.126/
 
 https://arxiv.org/abs/2305.14450
 https://github.com/FreedomIntelligence/Evaluation-of-ChatGPT-on-Information-Extraction
+An Emperical Study on Information Extraction using Large Language Models
+- porównali performance GPT-3.5 oraz GPT-4 między innymi dla flat (CoNNL03, FewNERD) oraz nested NER (ACE04, ACE05-Ent, GENIA)
+- porównali wyniki dla różnych rodzajów zapytań: zero-shot scenarii, few-shot in-context learning (ICL), few-shot chain-of-thought (COT)
+- do badania wyników użyli f1-score, zmodyfikowane o soft-matching strategy: difflib.SequenceMatcher skupiający się na wyłapywaniu jak najdłuższych takich samych sekwencji między tekstami, ustawili treshold i potraktowali zadanie jak binary classification problem
+- porównywali predicted span z annotated spanem z największym podobieństwem
+- mierzyli zmianę wyniku f1 między GPT-3.5 oraz GPT-4.0
+- trzy sposoby poprawiania jakości odpowiedzi LLMu:
+	- task-related knowledge informing (rozwijanie skrótów nazw encji - 'adversal drug reaction' vs. ADR),
+	- methodology specifying (check if each type of information is in the text, then output all information) - w przypadku flatNER pogorszyła performance - polepsza dla skomplikowanych zadań
+	- sufficient extraction reminder - przypominanie o celu zadania - używane dla bardzo trudnych zadań
+- w artykule znajdują się przykłady promptów dotyczących flat NER

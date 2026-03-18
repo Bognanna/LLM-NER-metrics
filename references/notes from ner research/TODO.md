@@ -1,15 +1,15 @@
 1. Implementacja
 	1. Benchmark
 		- [x] Wywalić sentence
-		- [x] Dodać tagi, tworząc 3 rodzaje przykładów w benchmarku: test encji (tagi zawsze dobre), test tagów (encje zawsze dobre), test wszystkiego (zarówno tagi jak i encje mogą być błędne)
-		- [ ] Poprawić encje: ujednolicenie zaimków (?), ujednolicenie form czasowników (?), ujednolicenie kolejności słów (?)
+		- [x] Dodać tagi, tworząc 3 rodzaje przykładów w benchmarku: test encji (tagi zawsze dobre), test tagów (encje zawsze dobre), test wszystkiego (zarówno tagi jak i encje 
 		- [x] Dodać id do każdego tripla
 		- [x] Poprawić test_types
 		- [x] zobaczyć dlaczego pojawiają się błędy w exh_CDE przy type
-		- [ ] zobaczyć dlaczego pojawiają się błędy w CDE 40-79 SIM
-		- [ ] poprawić aby zapisywało się CDEF-0.0
+		- [x] zobaczyć dlaczego pojawiają się błędy w CDE 40-79 SIM
+		- [x] poprawić aby zapisywało się CDEF-0.0
 	2. Use Cases
 		- [x] Spisać Use Cases
+		- [ ] Uwzględnić w Use Cases krawędziowe przypadki, porównujące działanie metryk
 	3. Metryka
 		- [x] Fbeta-score zamiast F1-score
 		- [x] Ujednolicić miary tak, aby obydwie były najlepsze dla 1 i najgorsze dla 0 (albo odwrotnie)
@@ -22,13 +22,21 @@
 		- [x] Zbadaj zachowanie dla beta=0.0 przy mix i sim
 		- [x] Dodać do testów use case testy na zwykłych metrykach
 		- [x] Porównanie działania metryk na use case
-		- [ ] Zaplanować testy na podstawie innych prac
-		- [ ] Utworzyć zbiór testowy
-		- [ ] Przeprowadzić testy
-		- [ ] Dodać do testów F1-score z soft matching?
+		- [ ] Dodać do testów F1-score z soft matching? https://github.com/FreedomIntelligence/Evaluation-of-ChatGPT-on-Information-Extraction/blob/main/1_NER/ner_report_metric.py
+		- [x] poprawić porównywanie floatów
+		- [x] Poprawić sposób implementacji Prec, Rec, F1-score
+	5. Wykończenie
+		- [ ] Usunąć zbędne pliki
+		- [ ] Usunąć zbędne komentarze
+		- [ ] Przejrzeć wszystkie funkcje i metody pod kątem wskazówek typów
+		- [ ] Napisać READ.me
+		- [ ] Stworzyć notebooka z instrukcją uruchomienia
+		- [ ] Uruchomić wszystko w venvie i zrobić requirements.txt
 
 
 2. Praca
+	- [ ] Napisać konspekt pracy z dokładnością co do paragrafu
+	- [ ] Ogarnąć templatkę od Piotra
 	1. Abstrakt
 	2. Wstęp
 	3. Opis problemu NER
@@ -43,7 +51,3 @@
 	12. Podsumowanie
 	13. Wskazanie dalszych prac
 	14. Deklaracja dotycząca wykorzystania generatywnego AI przy pracach
-	15. Inne:
-		- [ ] Założyć projekt na overleafie
-		- [ ] Dostosować templatkę
-		- [ ] Rozpisać strukturę pracy

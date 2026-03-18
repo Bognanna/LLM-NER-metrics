@@ -1,11 +1,13 @@
 def precision(tp, fp, fn):
-    return tp/(tp+fp)
+    p = tp/(tp+fp) if tp+fp != 0 else 0
+    return p
 
 def recall(tp, fp, fn):
-    return tp/(tp+fn)
+    r = tp/(tp+fn) if tp+fn != 0 else 0
+    return r
 
 def f1_score(tp, fp, fn):
-    prec = tp/(tp+fp)
-    rec = tp/(tp+fn)
-    f1 = 0 if (not prec) and (not rec) else 2*(prec*rec)/(prec+rec)
+    p = precision(tp, fp, fn)
+    r = recall(tp, fp, fn)
+    f1 = 2*(p*r)/(p+r) if p+r != 0 else 0
     return f1

@@ -14,21 +14,19 @@ The benchmark was created partialy manually and pariatlly with use of LLM. Part 
 All gold entities are of type "ADR" (Adverse Drug Reaction). To examine the performance of the metric for different entity types, for "B" and "C" sets, some of entities is marked as "Drug" type. The rest of entites is also of "ADR" type.
 
 # Conclusions from the tests on the benchmark:
-- **exhaustive_CDE** performes worse than **CDE** for test_types.json triples: 121, 123, 125, 126, 128, 129 - all have in common that |A| == 2. |B| == 1, |C| == 2 
-  
-	  {"A": \[\["dry mouth upon waking", "ADR"], \["headache", "ADR"]], 
-	  "B": \[\["dry mouth upon waking", "Drug"]], 
-	  "C": \[\["dry mouth upon waking", "Drug"], \["headache", "Drug"]], 
-	  "ID": 128},
-	  
-	It is worth to notice, that "B" is not arbitrally better than "C".
+
+- **CDE** does not handle 4 triples in test_sim.json, that have the same number of entities: 53, 57, 65, 68:
+	- {"A": \[\["mild shortness of breath on exertion", "ADR"]], "B": \[\["shortness of breath", "ADR"]], "C": \[\["breath on exertion", "ADR"]], "ID": 53},
+	- {"A": \[\["joint stiffness in the morning", "ADR"]], "B": \[\["joint stiffness", "ADR"]], "C": \[\["stiffness in morning", "ADR"]], "ID": 57},
+	- {"A": \[\["elevated blood glucose levels", "ADR"]], "B": \[\["blood glucose", "ADR"]], "C": \[\["glucose levels elevated", "ADR"]], "ID": 65},
+	- {"A": \[\["hearing loss in left ear", "ADR"]], "B": \[\["hearing loss", "ADR"]], "C": \[\["left ear loss", "ADR"]], "ID": 68},
 -  there are cases (e.g test_similarities.json, 90, 92) where **CDE** performes better then **CDEF-0.0**. In theory there should not be difference between them, however in implementation floats are used and in cases where there are ties between CDE(a,b) and CDE(a,c); CDEF-0.0(a,b) <> CDEF-0.0(a,c) by a minor value
   
 	  {"A": \[\["bloated stomach", "ADR"], \["gassy stomach", "ADR"]],
 	  "B": \[\["bloating", "ADR"], \["stomach", "ADR"]],  
 	   "C": \[\["head", "ADR"], \["bloating", "ADR"], \["stomach", "ADR"]], 
 	   "ID": 92}
-- CDEF best performance:
+- **CDEF** best performance:
   test_similarities.json: beta ~ 0.36
   test_types.json: any beta
   test_mix.json: beta ~ 1.5

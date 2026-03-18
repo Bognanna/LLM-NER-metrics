@@ -1,6 +1,15 @@
 # Data
 /data/
 
+# Bin
+/.bin/
+/docs/.bin/
+/models/.bin/
+/notebooks/.bin/
+/references/.bin/
+/reports/.bin/
+/util/.bin/
+
 # Mac OS-specific storage files
 .DS_Store
 

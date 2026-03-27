@@ -2,7 +2,7 @@ import ollama
 
 EMBED_MODEL = 'nomic-embed-text'
 
-def get_text_embedding_using_ollama(text:str):
+def get_text_embedding_using_ollama(text:str) -> list:
     
     if text:
         response = ollama.embed(
@@ -14,7 +14,7 @@ def get_text_embedding_using_ollama(text:str):
     
     return None
 
-def get_embeddings(entity_type:list):
+def get_embeddings(entity_type:list) -> list:
     embed_type = []
 
     for [entity, type] in entity_type:
@@ -23,7 +23,7 @@ def get_embeddings(entity_type:list):
 
     return embed_type
 
-def get_embeddings_for_list(list_of_entities:list)->list:
+def get_embeddings_for_list(list_of_entities:list) -> list:
     list_of_embeddings = []
 
     for entry in list_of_entities:

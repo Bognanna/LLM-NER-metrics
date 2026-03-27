@@ -1,4 +1,5 @@
 import numpy as np
+from typing import Tuple
 from itertools import combinations, permutations
 
 def __cosine_similarity(v1:list, v2:list) -> float:
@@ -15,7 +16,7 @@ def __cosine_distance_of_embeddings(a:list, b:list) -> float:
 
     return __cosine_distance(a[0], b[0])
 
-def __find_min_dist(x):
+def __find_min_dist(x:np.ndarray) -> Tuple[int, int]:
     k = x.argmin()
     ncol = x.shape[1]
     return int(k/ncol), int(k%ncol)

@@ -22,21 +22,21 @@
 		- [x] Zbadaj zachowanie dla beta=0.0 przy mix i sim
 		- [x] Dodać do testów use case testy na zwykłych metrykach
 		- [x] Porównanie działania metryk na use case
-		- [ ] Dodać do testów F1-score z soft matching? https://github.com/FreedomIntelligence/Evaluation-of-ChatGPT-on-Information-Extraction/blob/main/1_NER/ner_report_metric.py
+		- [x] Dodać do testów F1-score z soft matching? https://github.com/FreedomIntelligence/Evaluation-of-ChatGPT-on-Information-Extraction/blob/main/1_NER/ner_report_metric.py
 		- [x] poprawić porównywanie floatów
 		- [x] Poprawić sposób implementacji Prec, Rec, F1-score
 	5. Wykończenie
-		- [ ] Usunąć zbędne pliki
-		- [ ] Usunąć zbędne komentarze
-		- [ ] Przejrzeć wszystkie funkcje i metody pod kątem wskazówek typów
+		- [x] Usunąć zbędne pliki
+		- [x] Usunąć zbędne komentarze
+		- [x] Przejrzeć wszystkie funkcje i metody pod kątem wskazówek typów
 		- [ ] Napisać READ.me
 		- [ ] Stworzyć notebooka z instrukcją uruchomienia
 		- [ ] Uruchomić wszystko w venvie i zrobić requirements.txt
 
 
 2. Praca
-	- [ ] Napisać konspekt pracy z dokładnością co do paragrafu
-	- [ ] Ogarnąć templatkę od Piotra
+	- [x] Napisać konspekt pracy z dokładnością co do paragrafu
+	- [x] Ogarnąć templatkę od Piotra
 	1. Abstrakt
 	2. Wstęp
 	3. Opis problemu NER

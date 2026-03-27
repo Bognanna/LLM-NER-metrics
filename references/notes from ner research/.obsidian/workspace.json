@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "50a566b26c68ae7d",
+            "id": "cbbd74e0ceb16a9d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,31 +22,31 @@
             }
           },
           {
-            "id": "f6fdd147891458c1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "My work/Benchmark.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Benchmark"
-            }
-          },
-          {
             "id": "ae8ca179db4d1205",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/Metryka.md",
+                "file": "Master Thesis/Conspect.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Metryka"
+              "title": "Conspect"
+            }
+          },
+          {
+            "id": "bd79de18f2e8c60f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Notes/Scripts from meetings.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Scripts from meetings"
             }
           }
         ]
@@ -106,7 +106,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 302.5
   },
   "right": {
     "id": "7e70fad8fa8fa827",
@@ -189,39 +189,40 @@
       "bases:Stwórz nową bazę danych": false
     }
   },
-  "active": "50a566b26c68ae7d",
+  "active": "cbbd74e0ceb16a9d",
   "lastOpenFiles": [
-    "Notes/Przydatne linki.md",
+    "Master Thesis/Conspect.md",
     "TODO.md",
     "Notes/Scripts from meetings.md",
-    "Notes/Metryka.md",
+    "Master Thesis/00 - Streszczenie.md",
     "My work/Metric.md",
-    "My work/Benchmark.md",
+    "Notes/Przydatne linki.md",
+    "Notes/Metryka.md",
     "Notes/Benchmark.md",
-    "Notes/Testy.md",
+    "My work/Benchmark.md",
     "My work/Use Cases.md",
     "My work/Gen AI Use.md",
-    "Research/Data Sets/CADEC.md",
-    "Metric.md",
-    "My work",
-    "Research",
+    "Notes/Testy.md",
+    "Research/NER Methods/Transition Based.md",
     "Untitled.base",
     "template.md",
+    "Metric.md",
     "Bibliography.md",
+    "Research/NER Methods/Sequence-to-sequence.md",
+    "Research/NER Methods/Object detection.md",
+    "Research/NER Methods/Span Based.md",
+    "Research/NER Methods/Sequence Labeling.md",
+    "Research/NER Methods/Layer Based.md",
+    "Research/NER Methods/Hypergraph-based.md",
+    "Research/NER Methods/Grid-tagging.md",
+    "Master Thesis",
+    "Research/Data Sets/CADEC.md",
+    "My work",
+    "Research",
     "Research/Papers/A Span-Based Model for Joint Overlapped and Discontiunuous Named Entity Recognition.md",
     "Research/Papers/A Supervised Multi-Head Self-Attention Network for Nested Named Entity Recognition.md",
-    "Research/Papers/Discontinuous Named Entity Recognition as Maximal Clique Discovery.md",
-    "Research/Papers/Locate and Label - A Two-stage Indentifier for Nested Named Entity Recognition.md",
-    "Research/Papers/Nested Named Entity Recognition as Latent Lexicalized Constituency Parsing.md",
-    "Research/Papers/Neural Architectures for Named Entity Recognition.md",
-    "Research/Papers/Rethinking Boundaries End-To-End Recognition of Discontinuous Mentions with Pionter Networks.md",
-    "Research/Papers/Span-based Unified Named Entity Recognition Framework via Contrastive Learning.md",
-    "Research/Papers/TriG-NER - Triplet-Grid Framework for Discontinuous Named Entuty Recognition.md",
-    "Research/Papers/Unified Named Entity Recognition as Word-Word Relation Classification.md",
     "_old",
-    "_old/Metric proposals.md",
     "Use Cases",
-    "Research/NER Methods/Span Based.md",
     "Notes",
     "Research/Papers",
     "Research/NER Methods",

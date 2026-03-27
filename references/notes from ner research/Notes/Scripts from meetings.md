@@ -1,3 +1,21 @@
+27.03.2026
+1. Czy dodać case insensitiveness? zarówno przy soft matching jak i tradycyjnym podejściu
+   SENTENCE: Menstrual cramps present with or without vaginal bleeding. GOLD_ENTITIES: [['menstrual cramps with vaginal bleeding', 'Symptom'], ['menstrual cramps without vaginal bleeding', 'Symptom']] 
+   GENERATED_ENTITIES: [['Menstrual cramps', 'Symptom'], ['vaginal bleeding', 'Symptom']] 
+   CDE: 0.14882194156765166 
+   Exh_CDE 0.14882194156765166 
+   EF: 0.0 
+   CDEF-0.5 0.9395719209682687 
+   CDEF-1.0: 0.9613567746519021
+	PREC: 0.0 
+	REC: 0.0 
+	F1: 0 
+	F1-SOFT: 0.5
+2. Napisałam polskie streszczenie. Zagwozdki dotyczące pojęć: 
+	1. zadanie / problem / dziedzina NER/IE
+	2. rozpoznawanie nazwanych encji / rozpoznawanie jednostek nazwanych
+	3. podejście do zagadnienia / rozwiązanie problemu NER
+
 05.03.2026
 
 26.02.2025

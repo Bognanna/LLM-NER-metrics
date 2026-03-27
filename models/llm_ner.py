@@ -56,3 +56,4 @@ def get_entities_from_llm(
     )
 
     return response.message.content
+    

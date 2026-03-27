@@ -31,7 +31,7 @@
 		- [x] Przejrzeć wszystkie funkcje i metody pod kątem wskazówek typów
 		- [ ] Napisać READ.me
 		- [ ] Stworzyć notebooka z instrukcją uruchomienia
-		- [ ] Uruchomić wszystko w venvie i zrobić requirements.txt
+		- [x] Uruchomić wszystko w venvie i zrobić requirements.txt
 
 
 2. Praca

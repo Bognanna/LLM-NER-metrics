@@ -4,49 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "5a21c66b1c023ab2",
+        "id": "6a778dabccece01f",
         "type": "tabs",
         "children": [
           {
-            "id": "cbbd74e0ceb16a9d",
+            "id": "0a78a650540945f5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TODO.md",
+                "file": "Master Thesis/08 - Benchmark tests.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "TODO"
-            }
-          },
-          {
-            "id": "ae8ca179db4d1205",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Master Thesis/Conspect.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Conspect"
-            }
-          },
-          {
-            "id": "bd79de18f2e8c60f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Notes/Scripts from meetings.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Scripts from meetings"
+              "title": "08 - Benchmark tests"
             }
           }
         ]
@@ -106,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 302.5
+    "width": 257.5124969482422
   },
   "right": {
     "id": "7e70fad8fa8fa827",
@@ -122,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Data Sets/GENIA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for GENIA"
+              "title": "Linki zwrotne"
             }
           },
           {
@@ -186,46 +157,47 @@
       "daily-notes:Otwórz dzisiejszy dziennik": false,
       "templates:Wstaw szablon": false,
       "command-palette:Otwórz listę poleceń": false,
-      "bases:Stwórz nową bazę danych": false
+      "bases:Stwórz nową bazę danych": false,
+      "obsidian-importer:Open Importer": false
     }
   },
-  "active": "cbbd74e0ceb16a9d",
+  "active": "0a78a650540945f5",
   "lastOpenFiles": [
+    "Master Thesis/07 Use cases.md",
+    "Master Thesis/08 - Benchmark tests.md",
+    "Benchmark results/MIX 11.md",
+    "Benchmark results/MIX.md",
+    "Benchmark results/MIX 8.md",
+    "Benchmark results/MIX 6.md",
+    "Benchmark results/MIX 3.md",
+    "Benchmark results/MIX 1.md",
+    "Benchmark results.base",
+    "Benchmark results/MIX 10.md",
+    "Benchmark results/MIX 9.md",
+    "Benchmark results/MIX 7.md",
+    "Benchmark results/MIX 5.md",
+    "Benchmark results/MIX 4.md",
+    "Benchmark results/MIX 2.md",
+    "Benchmark results",
+    "Notes/Przydatne linki.md",
+    "Master Thesis/Plan Pracy.md",
+    "Master Thesis/06 CDEF - a novel metric for LLM performance evaluation in NER task.md",
+    "Master Thesis/01 - Introduction.md",
+    "Master Thesis/00 - Streszczenie.md",
     "Master Thesis/Conspect.md",
     "TODO.md",
-    "Notes/Scripts from meetings.md",
-    "Master Thesis/00 - Streszczenie.md",
-    "My work/Metric.md",
-    "Notes/Przydatne linki.md",
-    "Notes/Metryka.md",
-    "Notes/Benchmark.md",
     "My work/Benchmark.md",
-    "My work/Use Cases.md",
-    "My work/Gen AI Use.md",
-    "Notes/Testy.md",
-    "Research/NER Methods/Transition Based.md",
+    "Notes/Benchmark.md",
+    "My work/Metric.md",
+    "Notes/Metryka.md",
+    "Bez nazwy.base",
     "Untitled.base",
-    "template.md",
-    "Metric.md",
-    "Bibliography.md",
-    "Research/NER Methods/Sequence-to-sequence.md",
-    "Research/NER Methods/Object detection.md",
-    "Research/NER Methods/Span Based.md",
-    "Research/NER Methods/Sequence Labeling.md",
-    "Research/NER Methods/Layer Based.md",
-    "Research/NER Methods/Hypergraph-based.md",
-    "Research/NER Methods/Grid-tagging.md",
+    "Bez nazwy.canvas",
     "Master Thesis",
-    "Research/Data Sets/CADEC.md",
     "My work",
     "Research",
-    "Research/Papers/A Span-Based Model for Joint Overlapped and Discontiunuous Named Entity Recognition.md",
-    "Research/Papers/A Supervised Multi-Head Self-Attention Network for Nested Named Entity Recognition.md",
     "_old",
     "Use Cases",
-    "Notes",
-    "Research/Papers",
-    "Research/NER Methods",
-    "Research/Data Sets"
+    "Notes"
   ]
 }

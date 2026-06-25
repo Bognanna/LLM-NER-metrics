@@ -1,55 +1,59 @@
-In this chapter, we present a novel metric called CDEF, comprising two measures: CDE (cosinus distance of embeddings) and EF (entities found). First, we discuss the three conditions that we believe the metric should satisfy. We then present the CDE and EF measures. Finally, we introduce the CDEF metric as a combination of these two measures. We then summarize the conditions referred to at the beginning of the chapter.
+In this chapter, we propose a novel metric, CDEF, which comprises two measures: CDE (cosinus distance of embeddings) and EF (entities found). First, we discuss the three conditions that we believe the metric should satisfy. We then present the CDE and EF measures. Finally, we introduce the CDEF metric as a combination of these two measures. We then proceed to summarise the conditions to which reference is made at the commencement of the chapter.
 
-At the beginnig of the process of creting metric we set 3 conditions. The metric should be accurate, which means that the results it gives should precisely reflect the quality of extracted named entities. The metric should be reducible, which means that it should allow for approximate mapping into traditional metrics. Last, but not least it should be interpretable, so it should be easy to understand and interpret.
+The creation of the metric system was predicated on three fundamental conditions. 
+1. The metric should be accurate, which means that the results it gives should precisely reflect the quality of the extracted named entities. 
+2. The metric under consideration should be reducible, which means that it should allow for approximate mapping into traditional metrics. 
+3. Finally, the metric should be interpretable, that is to say, it should be straightforward to comprehend and analyse.
 
-The metric I present compares embedding vectors of entities. It allows for comparing the meaning of the entites, accepting the paraprhases. Previously authors of BERTscore and MoverScore showed that in case of LLM responses, using distance between embeddings can give accurate results, that having in mind paraphrases.
+The proposed metric is intended to make a comparison between the embedding vectors of entity names. The use of embeddings enables the comparison of the target information of an entity name, as opposed to the direct writing of the entity name, therefore allowing the acceptance of paraphrases. As demonstrated in previous studies, the application of distance measures between embeddings in the context of LLM responses has been shown to yield accurate results, with the consideration of paraphrases being a contributing factor. However, to the best of the author's knowledge, embeddings have not yet been used in the context of NER tasks.
 
 ### Cosinus distance of embeddings
-The first of two measures is CDE, which stands for Cosinus Distance of Embeddings. It measures the semantically similaritty between gold enitites and generated entities. CDE is the arthmetical average of cosinus distances between the embeddings of gold entities and the embeddings of generated entities. The distance is calculated only for paired entites. If two paired entites have different enitiy types, the distance between them is set to 2. That means that despite the similarity of generated entity to gold entity, if its will be classified as a wrong type of entity, its distance to gold entity will be maximal.
+CDEF is comprised of two measures. The first of these, the cosine distance of embeddings (CDE), is a measurement of the semantic similarity between reference entities and generated entities. CDE is defined as the arithmetic mean of the cosine distances between the embeddings of reference entities and those of generated entities. The calculation of distance is conducted only between paired entities. In the event of two paired entities having different entity types, the distance between them is set to 2. This means that despite the similarity of the generated entity to the reference entity, if its type classification is incorrect, its distance to the reference entity will be maximal.
 
-Va1, ..., Van - embedding vectors of gold entities
-Vb1, ..., Vbm - embedding vectors of generated entities
+Va1, ..., Van - embedding vectors of reference entities names
+Vb1, ..., Vbm - embedding vectors of generated entities names
 
-dist = Dc(Va, Vb) if type(a) == type(b), else 1
+dist = Dc(Va, Vb) if type(a) == type(b), else 2
 CDE = SUM(dist)/(COUNT(dist))
 
-A - set of gold entities
+A - set of reference entities
 B - set of generated entities
 
-The range of values for this measure is <0;2). Where 0 indicates that paired entities are lexicaly the same. Results close to 0 indicate that there are some lexical differences between paired enitites, however semantically they are close.
-
-### How to match entities into pairs?
-
+The range of values for this measure is <0;2). Where 0 indicates that paired entities are the same. Result close to 0, suggests the existence of lexical differences between paired entities, while the target information is maintained.
 
 ## Entities Found
 
-EF stands for Enitites Found measure and it reflects the proportion between number of generated entities and number of gold enitites. It shows weather the set of generated enitites has exact number of entites as set of gold enitites.
+The Entities Found (EF) measure is defined as the proportion of generated entities in relation to the total number of reference entities. The result of the EF measure indicates whether the set of generated entities corresponds precisely to the set of reference entities.
 
-|A| - number of gold entities
+|A| - number of reference entities
 |B| - number of generated entities
 
 EF = 2*|B|/(|A|+|B|) - 1
 
-The range of values for this measure is <-1;1>:
-- <-1; 0) indicated that there are less generated entities than gold entities
-- 0 indicates that there is the same number of gold entities as generated entities
-- (0;1> indicates that ther are more generated entities than gold entities
+The range of values for this measure is <-1;1>.
+- The result value in range <-1; 0) indicates that the number of generated entities is fewer than the reference entities.
+- The result value of 0 indicates that the number of reference entities is equal to the number of generated entities.
+-  The result value in range (0;1> signifies that the number of generated entities exceeds the number of reference entities.
 
 ## CDEF
-CDEF mereges CDE and EF measures together in order to give trustfull results determining the quality of generated enitites. It is necessary to comprise these two measures, beacuse CDE alone will not penalitaze situations where too little or too many enitites is generated. From the other hand, EF alone gives very poor results, because it only focuses on number of generated enitites, no matter their quality.
+The CDEF metric integrates CDE and EF measures to ensure reliable results in the assessment of the quality of generated entities. It is necessary to consider these two measures in combination, since CDE alone will not penalise situations where too few or too many entities are generated. On the other hand, EF alone produce unsatisfactory results, as it exclusively prioritises the number of generated entities, irrespective of their quality.
 
-CDEF is the weighted harmonic mean of 1-CDE/2 and 1-absolute value of EF. These transformations are necessary, because CDE and EF has different ranges of values and while CDE its worst value in 2, EF has it in -1 and 1. As CDEF is inspired by the F-beta score metric, there is a beta coefficient, that determinies how much CDE measure will be important in favour of EF measure. The range of beta value is <0; oo). If beta <1, then the CDE has greater impact on the final result than EF, for beta=1, CDE and EF are both treated the same, for beta >1, EF has more impact on the final result than CDE.
+CDEF is defined as the weighted harmonic mean of 1-CDE/2 and 1-absolute value of EF. These transformations are necessary because CDE and EF have different ranges of values. While CDE has its worst value at 2, EF has it at -1 and 1. As CDEF is inspired by the F-beta score metric, there is a beta coefficient that determines how much the CDE measure will be important in comparison to the EF measure. The range of beta values is <0; oo). As the beta coefficient value increases, the influence of the CDE measure on the final result is reduced, while the influence of the EF measure is increased.
 
 CDEF = \[(1+beta^2)\*(1-(CDE)/2) \* (1-abs(EF))] \ \[(beta^2 \* (1-CDE/2)) + (1- abs(EF))]
 
-The range of values for this metric is <0;1>. Where 1 is the optimal value and 0 is the worst.
+The range of values for the CDEF metric is <0;1>. The value of 1 is optimal, while 0 is the worst possible outcome.
 
 ## Summary
 
-|         | CDE   | exh_CDE | EF     | CDEF  |
-| ------- | ----- | ------- | ------ | ----- |
-| Range   | <0;2) | <0;2)   | <-1;1> | <0;1> |
-| Optimal | 0     | 0       | 0      | 1     |
-| Worst   | 2     | 2       | -1; 1  | 0     |
-Concluding this chapter, the CDEF metric comprises two measures: CDE that captures semantic similarity between generated entites and gold enitites, and EF that penalitizes situations, where too many or too little enitites are generated. CDEF same as traditional metrics such us Accuracy, Precission, Recall, F1-score , has its range of values in <0;1>, where 1 indicated optimal solution. That makes this metric reducable. The metric is also interpretable, as far as its results are presented together with component measures results.
-In following chapters I show on several benchmarks and use cases that CDEF metric is also accurate. 
+|         | CDE   | exh_CDE | EF     | CDEF  |     |
+| ------- | ----- | ------- | ------ | ----- | --- |
+| Range   | <0;2) | <0;2)   | <-1;1> | <0;1> |     |
+| Optimal | 0     | 0       | 0      | 1     |     |
+| Worst   | 2     | 2       | -1; 1  | 0     |     |
+In conclusion, the CDEF metric is comprised of two measures. The CDE is designed to capture semantic similarity between generated entities and reference entities. The EF is intended to penalise situations where too many or too few entities are generated.
+
+The CDEF metric satisfies all three conditions that are stated at the beginning of this chapter.
+1. The metric is reducible, since its range of values is <0;1> and 1 indicates an optimal solution. The same trait have traditional metrics, including accuracy, precision, recall and the F1 score.
+2. The metric is interpretable, insofar as its results are presented in conjunction with the component measures results.
+3. The accuracy of the CDEF metric will be demonstrated in the following chapters, which will present the findings on a number of use cases and benchmarks.

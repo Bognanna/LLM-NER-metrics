@@ -3,3 +3,4 @@
 - use cases: generating part of use cases - GPT-4o
 - embeddings: nomic-embed-text
 - bibliography: help with searching through web and finding interesting articles - GPT-5
+- writing assistant: deepl write

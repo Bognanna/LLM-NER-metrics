@@ -1,4 +1,0 @@
-- definicja "named entity" - w którym momencie przeszliśmy od definiowania tego jako tasku do nazywania ten sposób nazw obiektów (patrz glossary)? w http://www.lrec-conf.org/proceedings/lrec2002/pdf/120.pdf jest zwrócona uwaga na niejednoznaczność definicji tego czym jest named entity, ale już w obrębie założenia że named entity odności się do nazwy obiektu
-- przejrzeć potencjalne tematy do poruszenia i zastanowić się czy je gdzieś nie zamieścić w pracy
-- czy nie powinnam zmienić porównania z innymi metrykami - czy ja porównuję to samo (patrz na matching strategies)
-- strasznie słabo zdefiniowany temat, może jednak pokuszę się o glossary (w mojej pracy, przez podane terminy rozumiem ...), problem z wieloma nazwami na tą samą rzecz type vs. class vs. category

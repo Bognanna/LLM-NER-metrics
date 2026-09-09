@@ -1,6 +1,0 @@
-- benchmark generation: generating part of the triples - GPT-4o
-- debugging: help with debugging Python code - GPT-5
-- use cases: generating part of use cases - GPT-4o
-- embeddings: nomic-embed-text
-- bibliography: help with searching through web and finding interesting articles - GPT-5
-- writing assistant: deepl write

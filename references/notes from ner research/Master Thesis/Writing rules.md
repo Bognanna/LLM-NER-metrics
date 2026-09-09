@@ -1,2 +1,0 @@
-- 1. pural person (we)
-- present

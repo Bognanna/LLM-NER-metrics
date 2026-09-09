@@ -1,13 +1,16 @@
 # Files
 
 # Data
-/data/
+/data/external/cadec/
+/data/interim/
+/data/processed/
+/data/raw/
 
 # Bin
 /.bin/
 /docs/.bin/
 /models/.bin/
-/notebooks/.bin/
+/notebooks/.bin
 /references/.bin/
 /reports/.bin/
 /util/.bin/

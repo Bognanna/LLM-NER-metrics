@@ -1,61 +1,22 @@
 # Evaluation metrics for large language models in a named entity extraction task
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+This repository is connected to the master's thesis in which I introduce the CDEF metric. It contains implementation of the CDEF metric as well as two component measures: CDE and EF. 
 
-...
+## Description
+CDEF is a metric for evaluating performance of LLMs in a NER task. It incorporates embeddings of entities in order to measure semantic similarity between lists of generated and reference (gold) entities.
 
-## Project Organization
+The notebooks section contains three Jupyter notebooks:
+- `test_on_benchmark.ipynb` in which I performed tests of the metric on 3 benchmarks. The results of these tests I discuss in the master's thesis.
+- `test_on_use_cases.ipynb` in which I show, through particular examples, how the metric behaves. The description of these use cases can be found in the master's thesis.
+- `tutorial.ipynb` in which I present step by step how to use the functions implemented in this project in order to calculate CDEF.
 
-```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         evaluation_metrics_for_large_language_models_in_a_named_entity_extraction_task and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── evaluation_metrics_for_large_language_models_in_a_named_entity_extraction_task   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes evaluation_metrics_for_large_language_models_in_a_named_entity_extraction_task a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
-```
+## Installation
+I haven't prepared a sophisticated installation method. If you want to run notebooks or use the implemented metric, just clone the repository, ensure all libraries listed in `requirements.txt` are installed, and that you have Ollama running locally on your computer.
 
---------
+## Usage
 
+For usage instructions, see `tutorial.ipynb`.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)

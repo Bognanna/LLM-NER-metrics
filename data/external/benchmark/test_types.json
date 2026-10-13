@@ -121,7 +121,7 @@
         {"A": [["progressive shortness of breath", "ADR"]], "B": [["progressive shortness of breath", "Drug"]], "C": [["progressive shortness of breath", "Drug"], ["foo", "Drug"]], "ID": 117},
         {"A": [["sudden onset dizziness when standing", "ADR"]], "B": [["sudden onset dizziness when standing", "Drug"]], "C": [["sudden onset dizziness when standing", "Drug"], ["foo", "Drug"]], "ID": 118},
         {"A": [["persistent lower back stiffness", "ADR"]], "B": [["persistent lower back stiffness", "Drug"]], "C": [["persistent lower back stiffness", "Drug"], ["foo", "Drug"]], "ID": 119},
-        {"A": [["pain radiating from lower back to right leg", "ADR"]], "B": [["pain radiating from lower back to right leg", "Drug"]], "C": [["pain radiating from lower back to right leg", "Drug"]], "ID": 120},
+        {"A": [["pain radiating from lower back to right leg", "ADR"]], "B": [["pain radiating from lower back to right leg", "ADR"], ["foo", "Drug"]], "C": [["pain radiating from lower back to right leg", "Drug"]], "ID": 120},
         {"A": [["dry patches on elbows", "ADR"], ["itchy patches on elbows", "ADR"]], "B": [["dry patches on elbows", "Drug"]], "C": [["dry patches on elbows", "Drug"], ["itchy patches on elbows", "Drug"]], "ID": 121},
         {"A": [["pain spreading from neck to upper back", "ADR"]], "B": [["pain spreading from neck to upper back", "Drug"], ["foo", "ADR"]], "C": [["pain spreading from neck to upper back", "Drug"]], "ID": 122},
         {"A": [["tingling sensation in fingertips", "ADR"], ["numbness in fingertips", "ADR"]], "B": [["tingling sensation in fingertips", "Drug"]], "C": [["tingling sensation in fingertips", "Drug"], ["numbness in fingertips", "Drug"]], "ID": 123},

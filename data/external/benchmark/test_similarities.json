@@ -121,7 +121,7 @@
         {"A": [["progressive shortness of breath", "ADR"]], "B": [["shortness of breath", "ADR"]], "C": [["shortness", "ADR"], ["breath", "ADR"]], "ID": 117},
         {"A": [["sudden onset dizziness when standing", "ADR"]], "B": [["dizziness when standing", "ADR"]], "C": [["dizziness", "ADR"], ["standing", "ADR"]], "ID": 118},
         {"A": [["persistent lower back stiffness", "ADR"]], "B": [["lower back stiffness", "ADR"]], "C": [["back stiffness", "ADR"], ["lower back", "ADR"]], "ID": 119},
-        {"A": [["pain radiating from lower back to right leg", "ADR"]], "B": [["pain in lower back", "ADR"]], "C": [["pain", "ADR"]], "ID": 120},
+        {"A": [["pain radiating from lower back to right leg", "ADR"]], "B": [["pain in lower back", "ADR"], ["pain in right leg", "ADR"]], "C": [["pain", "ADR"]], "ID": 120},
         {"A": [["dry patches on elbows", "ADR"], ["itchy patches on elbows", "ADR"]], "B": [["dry itchy elbows", "ADR"]], "C": [["dry patches", "ADR"], ["itchy patches", "ADR"]], "ID": 121},
         {"A": [["pain spreading from neck to upper back", "ADR"]], "B": [["neck pain", "ADR"], ["upper back pain", "ADR"]], "C": [["pain neck back", "ADR"]], "ID": 122},
         {"A": [["tingling sensation in fingertips", "ADR"], ["numbness in fingertips", "ADR"]], "B": [["tingling and numbness in fingertips", "ADR"]], "C": [["tingling", "ADR"], ["fingertips", "ADR"]], "ID": 123},

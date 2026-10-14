@@ -24,10 +24,10 @@ def get_embeddings(entity_type:list, embed_model:str=EMBED_MODEL) -> list:
 
     return embed_type
 
-def get_embeddings_for_list(list_of_entities:list) -> list:
+def get_embeddings_for_list(list_of_entities:list, embed_model:str=EMBED_MODEL) -> list:
     list_of_embeddings = []
 
     for entry in list_of_entities:
-        list_of_embeddings.append(get_embeddings(entry))
+        list_of_embeddings.append(get_embeddings(entry, embed_model))
 
     return list_of_embeddings

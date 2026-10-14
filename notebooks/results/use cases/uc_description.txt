@@ -1,0 +1,135 @@
+uc01
+sentence = "The examination revealed that the patient suffers from poorly controlled high blood sugar triggering peripheral nerve damage and kidney dysfunction."
+gold_entities = [
+    ['poorly controlled high blood sugar', 'Disease'],
+    ['high blood sugar peripheral nerve damage', 'Disease'],
+    ['high blood sugar kidney dysfunction', 'Disease'],
+]
+generated_entities = [
+    ['uncontrolled hyperglycemia', 'Disease'],
+    ['diabetic peripheral neuropathy', 'Disease'],
+    ['secondary diabetic nephropathy', 'Disease'],
+]
+
+uc11
+sentence = "The patient reported pain in the lower back and occasionally in the right leg."
+gold_entities = [
+    ['pain in the lower back', 'Symptom'],
+    ['pain in the right leg', 'Symptom']
+]
+generated_entities_1 = [
+    ['pain', 'Symptom'], ['lower back', 'Symptom'], ['right leg', 'Symptom']
+]
+generated_entities_2 = [
+    ['pain in the lower back', 'Symptom'], ['occasionally in the right leg pain', 'Symptom']
+]
+
+uc12
+sentence = "The patient experienced shortness of breath on exertion and sometimes at rest."
+gold_entities = [
+    ['shortness of breath on exertion', 'Symptom'],
+    ['shortness of breath at rest', 'Symptom']
+]
+
+generated_entities_1 = [
+    ['shortness of breath', 'Symptom']
+]
+generated_entities_2 = [
+    ['shortness of breath', 'Symptom'], ['exertion', 'Disease'], ['at rest', 'Disease']
+]
+
+uc13
+sentence = "Have stopped taking and immediatedly muscle/joint pain eased and sleeping much better."
+gold_entities = [
+    ['muscle pain', 'Symptom'],
+    ['joint pain', 'Symptom']
+]
+generated_entities_1 = [
+    ['muscle/joint pain', 'Symptom']
+]
+generated_entities_2 = [
+    ['muscle/joint pain', 'Symptom'], ['sleeping much better', 'Symptom']
+]
+
+uc14
+sentence = "Menstrual cramps present with or without vaginal bleeding."
+gold_entities = [
+    ['menstrual cramps with vaginal bleeding', 'Symptom'],
+    ['menstrual cramps without vaginal bleeding', 'Symptom']
+]
+generated_entities_1 = [
+    ['menstrual cramps', 'Symptom'], ['vaginal bleeding', 'Symptom']
+]
+generated_entities_2 = [
+    ['menstrual cramps', 'Symptom'], ['vaginal bleeding', 'Symptom']
+]
+
+uc15
+sentence = "After the second pill the same progression of symptoms only now the abdominal gas,cramps and pain would be with me all day."
+gold_entities = [
+    ['abdominal gas', 'Symptom'],
+    ['abdominal cramps', 'Symptom'],
+    ['abdominal pain', 'Symptom']
+]
+
+generated_entities_1 = [
+    ['abdominal gas', 'Symptom'], ['cramps', 'Symptom'], ['pain', 'Symptom']
+]
+generated_entities_2 = [
+    ['abdominal gas', 'Symptom'], ['cramps', 'Symptom'], ['pain', 'Symptom']
+]
+
+uc21 
+sentence = "Without this drug I was severly restricted and could only walk less than 100 meters."
+gold_entities = [
+    ['could only walk less than 100 meters', 'Symptom']
+]
+
+generated_entities_1 = [
+    ['this drug', 'Drug']
+]
+generated_entities_2 = [
+    ['this drug', 'Drug']
+]
+
+uc22
+sentence = "Recently I've been feeling like my stomach is full and empty at the same time hard to explain."
+gold_entities = [
+    ['feeling stomach is full and empty at the same time', 'Symptom']
+]
+
+generated_entities_1 = [
+    ['stomach', 'Disease'], ['full', 'Symptom'], ['empty', 'Symptom']
+]
+generated_entities_2 = [
+    ['feeling like stomach is full and empty at the same time', 'Symptom']
+]
+
+
+uc23
+sentence = "The boy was diagnosed with a very bad lung infection that affected the lower part of his right lung."
+gold_entities = [
+    ['lung infection of the lower part of right lung', 'Disease']
+]
+
+generated_entities_1 = [
+    ['lung infection', 'Disease']
+]
+generated_entities_2 = [
+    ['lung infection', 'Disease']
+]
+
+uc24
+sentence = "The doctors started strong medicine through a vein to treat swelling in the brain caused by the immune system attacking itself."
+gold_entities = [
+    ['strong intravenous medicine', 'Drug'],
+    ['swelling in the brain', 'Disease'],
+    ['immune system attacking itself', 'Disease']
+]
+
+generated_entities_1 = [
+    ['swelling', 'Symptom'], ['strong medicine', 'Drug'], ['the immune system attacking itself', 'Disease']
+]
+generated_entities_2 = [
+    ['swelling in the brain', 'Symptom'], ['immune system attacking itself', 'Disease']
+]

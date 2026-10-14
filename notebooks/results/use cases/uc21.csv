@@ -1,0 +1,13 @@
+model, ent_group, cde, ef, cdef_05, cdef_01
+nomic-embed-text, 1, 2.0, 0.0, 0.0, 0.0
+nomic-embed-text, 2, 2.0, 0.0, 0.0, 0.0
+qwen3-embedding, 1, 2.0, 0.0, 0.0, 0.0
+qwen3-embedding, 2, 2.0, 0.0, 0.0, 0.0
+embeddinggemma, 1, 2.0, 0.0, 0.0, 0.0
+embeddinggemma, 2, 2.0, 0.0, 0.0, 0.0
+granite-embedding, 1, 2.0, 0.0, 0.0, 0.0
+granite-embedding, 2, 2.0, 0.0, 0.0, 0.0
+mxbai-embed-large, 1, 2.0, 0.0, 0.0, 0.0
+mxbai-embed-large, 2, 2.0, 0.0, 0.0, 0.0
+snowflake-arctic-embed, 1, 2.0, 0.0, 0.0, 0.0
+snowflake-arctic-embed, 2, 2.0, 0.0, 0.0, 0.0

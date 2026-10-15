@@ -1,4 +1,4 @@
-model, ent_group, cde, ef, cdef_05, cdef_01
+model, ent_group, cde, ef, cdef_05, cdef_1
 nomic-embed-text, 1, 2.0, 0.0, 0.0, 0.0
 nomic-embed-text, 2, 2.0, 0.0, 0.0, 0.0
 qwen3-embedding, 1, 2.0, 0.0, 0.0, 0.0
